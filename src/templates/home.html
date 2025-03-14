@@ -1,0 +1,3 @@
+{% extends 'base.html' %} {% block head_title %} HomePage from home.html {% endblock head_title %} {% block content %}
+<p>Hello from home.html</p>
+{% include "snippets/welcome-user-msg.html" %} Page_Visits:{{page_visit_count}} total_visits:{{total_visits_count}} percent:{{percent}}{% endblock content %}
