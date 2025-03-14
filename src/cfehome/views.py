@@ -21,6 +21,18 @@ def home_page_view(request, *args, **kwargs):
     PageVisit.objects.create(path=request.path)
     return render(request, html_template, my_context)
 
+def abou_view(request, *args, **kwargs):
+    
+    my_title = "My page"
+    my_context = {
+        "title": my_title,
+        
+    }
+    
+    html_template = "about.html"
+    
+    return render(request, html_template, my_context)
+
 
 
 def my_old_home_page_view(request, *args, **kwargs):
